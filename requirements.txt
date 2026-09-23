@@ -1,0 +1,5 @@
+datasets>=2.19
+transformers>=4.40
+torch>=2.2
+tqdm
+accelerate

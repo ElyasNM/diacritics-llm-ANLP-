@@ -1,0 +1,230 @@
+{
+  "summary": {
+    "n_paired": 84,
+    "pct_agreement": 94.0,
+    "cohen_kappa": 0.879,
+    "kappa_note": "Standard unweighted Cohen's kappa (nominal categories).",
+    "kappa_interpretation": "Almost perfect agreement — proceed with full-scale judging."
+  },
+  "confusion_matrix": {
+    "CORRECT": {
+      "CORRECT": 45,
+      "INCORRECT": 3
+    },
+    "INCORRECT": {
+      "CORRECT": 2,
+      "INCORRECT": 34
+    }
+  },
+  "per_class_metrics": {
+    "CORRECT": {
+      "precision": 0.957,
+      "recall": 0.938,
+      "f1": 0.947
+    },
+    "INCORRECT": {
+      "precision": 0.919,
+      "recall": 0.944,
+      "f1": 0.932
+    }
+  },
+  "consistency": {
+    "total_valid_checks": 15,
+    "skipped_errors": 0,
+    "consistent": 15,
+    "inconsistent": 0,
+    "consistency_pct": 100.0,
+    "cases": [
+      {
+        "pilot_id": 76,
+        "first_label": "CORRECT",
+        "second_label": "CORRECT",
+        "consistent": true
+      },
+      {
+        "pilot_id": 68,
+        "first_label": "CORRECT",
+        "second_label": "CORRECT",
+        "consistent": true
+      },
+      {
+        "pilot_id": 63,
+        "first_label": "CORRECT",
+        "second_label": "CORRECT",
+        "consistent": true
+      },
+      {
+        "pilot_id": 49,
+        "first_label": "CORRECT",
+        "second_label": "CORRECT",
+        "consistent": true
+      },
+      {
+        "pilot_id": 23,
+        "first_label": "INCORRECT",
+        "second_label": "INCORRECT",
+        "consistent": true
+      },
+      {
+        "pilot_id": 30,
+        "first_label": "INCORRECT",
+        "second_label": "INCORRECT",
+        "consistent": true
+      },
+      {
+        "pilot_id": 32,
+        "first_label": "CORRECT",
+        "second_label": "CORRECT",
+        "consistent": true
+      },
+      {
+        "pilot_id": 69,
+        "first_label": "INCORRECT",
+        "second_label": "INCORRECT",
+        "consistent": true
+      },
+      {
+        "pilot_id": 18,
+        "first_label": "INCORRECT",
+        "second_label": "INCORRECT",
+        "consistent": true
+      },
+      {
+        "pilot_id": 77,
+        "first_label": "CORRECT",
+        "second_label": "CORRECT",
+        "consistent": true
+      },
+      {
+        "pilot_id": 33,
+        "first_label": "CORRECT",
+        "second_label": "CORRECT",
+        "consistent": true
+      },
+      {
+        "pilot_id": 12,
+        "first_label": "CORRECT",
+        "second_label": "CORRECT",
+        "consistent": true
+      },
+      {
+        "pilot_id": 52,
+        "first_label": "CORRECT",
+        "second_label": "CORRECT",
+        "consistent": true
+      },
+      {
+        "pilot_id": 26,
+        "first_label": "INCORRECT",
+        "second_label": "INCORRECT",
+        "consistent": true
+      },
+      {
+        "pilot_id": 50,
+        "first_label": "CORRECT",
+        "second_label": "CORRECT",
+        "consistent": true
+      }
+    ]
+  },
+  "disagreements": {
+    "total_disagreements": 5,
+    "by_source": {
+      "parashoot": 1,
+      "mkqa": 2,
+      "heq": 2
+    },
+    "by_condition": {
+      "with_niqud": 4,
+      "no_niqud": 1
+    },
+    "by_f1_level": {
+      "low_f1": 2,
+      "medium_f1": 3
+    },
+    "by_direction": {
+      "human=INCORRECT -> judge=CORRECT": 2,
+      "human=CORRECT -> judge=INCORRECT": 3
+    },
+    "examples": [
+      {
+        "pilot_id": 49,
+        "source": "parashoot",
+        "condition": "with_niqud",
+        "f1_level": "low_f1",
+        "f1": 0.0,
+        "question": "עם מי יצר וואורינן את \"הקבוצה למוזיקה עכשווית\"?",
+        "gold": [
+          "הארווי סולברגר"
+        ],
+        "prediction": "עם הרווי סולברג",
+        "human": "INCORRECT",
+        "judge": "CORRECT",
+        "reason": "השם של הארווי סולברגר הוזכר בצורה שונה אך מתייחס לאותו אדם."
+      },
+      {
+        "pilot_id": 66,
+        "source": "mkqa",
+        "condition": "with_niqud",
+        "f1_level": "medium_f1",
+        "f1": 0.5,
+        "question": "מי שרוב הסופרבול מנצח AFC או NFC",
+        "gold": [
+          "National Football Conference",
+          "ליגת הפוטבול הלאומית",
+          "NFC",
+          "ה- nfc / nfl"
+        ],
+        "prediction": "הסופרבול מנצח את ה-NFC.",
+        "human": "CORRECT",
+        "judge": "INCORRECT",
+        "reason": "התגובה שגויה כי היא טוענת שה-NFC מנצח את הסופרבול, ולא עונה על השאלה מי לרוב מנצח."
+      },
+      {
+        "pilot_id": 7,
+        "source": "heq",
+        "condition": "no_niqud",
+        "f1_level": "medium_f1",
+        "f1": 0.4286,
+        "question": "מהי רמת הסוכר הממוצעת בדם בקרב החולים?",
+        "gold": [
+          "110 מיליגרם לדציליטר"
+        ],
+        "prediction": "רמת הסוכר הממוצעת בדם בקרב חולים היא 80-110 מיליגרם לדציליטר.",
+        "human": "CORRECT",
+        "judge": "INCORRECT",
+        "reason": "התגובה אינה מספקת תשובה מדויקת לשאלה, מכיוון שהיא מציינת טווח ולא ערך ספציפי."
+      },
+      {
+        "pilot_id": 72,
+        "source": "mkqa",
+        "condition": "with_niqud",
+        "f1_level": "low_f1",
+        "f1": 0.0,
+        "question": "fried green tomatoes-של מי הגברת הזקנה מ",
+        "gold": [
+          "ninny threadgoode"
+        ],
+        "prediction": "של נאני",
+        "human": "INCORRECT",
+        "judge": "CORRECT",
+        "reason": "השם נאני הוא תרגום נכון של Ninny Threadgoode."
+      },
+      {
+        "pilot_id": 23,
+        "source": "heq",
+        "condition": "with_niqud",
+        "f1_level": "medium_f1",
+        "f1": 0.2222,
+        "question": "באיזו אפליקציה יש אפשרות לפילטר של מין הנוסע?",
+        "gold": [
+          "Gett"
+        ],
+        "prediction": "אַפְּלִיקַצְיַת מוֹנִיּוֹת כְּמוֹ Gett, MyTaxi אוֹ אוֹבֶּר וְלִיפְּט",
+        "human": "CORRECT",
+        "judge": "INCORRECT",
+        "reason": "The candidate does not directly answer the question about the specific app that has the gender filter."
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "heq_filtered": {
+    "n": 2152,
+    "base_em": 9.67,
+    "niq_em": 12.59,
+    "delta_em": 2.93,
+    "base_f1": 16.56,
+    "niq_f1": 20.13,
+    "delta_f1": 3.57,
+    "niq_helped_em": 8.46,
+    "niq_hurt_em": 5.53
+  }
+}

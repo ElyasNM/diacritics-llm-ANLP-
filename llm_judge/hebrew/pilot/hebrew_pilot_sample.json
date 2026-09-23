@@ -1,0 +1,1312 @@
+[
+  {
+    "pilot_id": 1,
+    "source": "heq",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מהו השיר המצליח ביותר שהלחינה רביץ בשנת 1981?",
+    "context": null,
+    "answers": [
+      "\"ילדות נשכחת\""
+    ],
+    "prediction": "\"ילדות נשכחת\""
+  },
+  {
+    "pilot_id": 2,
+    "source": "heq",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "כמה זמן לוקח לטכנאי של Puls לתקן מכשיר נייד?",
+    "context": null,
+    "answers": [
+      "60 דקות"
+    ],
+    "prediction": "60 דקות"
+  },
+  {
+    "pilot_id": 3,
+    "source": "heq",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "איפה התחיל וירוס הקורונה?",
+    "context": null,
+    "answers": [
+      "בארה״ב"
+    ],
+    "prediction": "וירוס הקורונה התחיל בסין."
+  },
+  {
+    "pilot_id": 4,
+    "source": "heq",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "באיזו גרסת iOS נולדה Siri?",
+    "context": null,
+    "answers": [
+      "ב – iOS 12"
+    ],
+    "prediction": "ב-iOS 12"
+  },
+  {
+    "pilot_id": 5,
+    "source": "heq",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "כמה פעמים, בסך הכל, תועד שלג מחוץ לחודשי ינואר עד מחצית מרץ?",
+    "context": null,
+    "answers": [
+      "12"
+    ],
+    "prediction": "שלוש פעמים"
+  },
+  {
+    "pilot_id": 6,
+    "source": "heq",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "היכן היה מדורו של לוין \"דף האחוריים\"?",
+    "context": null,
+    "answers": [
+      "ברדיו"
+    ],
+    "prediction": "הִתְפַּרְסֵם קֹדֶם לָכֵן בִּמְדוֹרוֹ \"דַּף הָאֲחוֹרַיִּם\"."
+  },
+  {
+    "pilot_id": 7,
+    "source": "heq",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "medium_f1",
+    "f1": 0.4286,
+    "em": 0,
+    "question": "מהי רמת הסוכר הממוצעת בדם בקרב החולים?",
+    "context": null,
+    "answers": [
+      "110 מיליגרם לדציליטר"
+    ],
+    "prediction": "רמת הסוכר הממוצעת בדם בקרב חולים היא 80-110 מיליגרם לדציליטר."
+  },
+  {
+    "pilot_id": 8,
+    "source": "heq",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מי מכהן כמנכ\"ל אינטל?",
+    "context": null,
+    "answers": [
+      "פאט גלסינגר"
+    ],
+    "prediction": "פאט גלסינגר"
+  },
+  {
+    "pilot_id": 9,
+    "source": "heq",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "כמה יכולות גרפיות יש לדגם ה7 של מיקרוסופט?",
+    "context": null,
+    "answers": [
+      "2 טרהפלופ"
+    ],
+    "prediction": "2 טְרָהַפְּלוֹפּ"
+  },
+  {
+    "pilot_id": 10,
+    "source": "heq",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 0.8,
+    "em": 0,
+    "question": "באיזו עונה שיחק קורט רמביס במועדון?",
+    "context": null,
+    "answers": [
+      "1998/1999"
+    ],
+    "prediction": "בשנת 1998/1999"
+  },
+  {
+    "pilot_id": 11,
+    "source": "heq",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.1667,
+    "em": 0,
+    "question": "כמה קנאביס ביום מעשן מעשן כבד?",
+    "context": null,
+    "answers": [
+      "כ-20 סיגריות"
+    ],
+    "prediction": "מעשן כבד של קנאביס מעשן 3-4 סיגריות ביום."
+  },
+  {
+    "pilot_id": 12,
+    "source": "heq",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מתי שובץ כוכבי בגדוד 890?",
+    "context": null,
+    "answers": [
+      "באוגוסט 1982",
+      "אוגוסט 1982"
+    ],
+    "prediction": "אוֹגוּסְט 1982"
+  },
+  {
+    "pilot_id": 13,
+    "source": "heq",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "באיזה שנה הומצאה הדמות מיסטר בין?",
+    "context": null,
+    "answers": [
+      "1994"
+    ],
+    "prediction": "1994"
+  },
+  {
+    "pilot_id": 14,
+    "source": "heq",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "היכן התפללו היהודים הדתיים תפילת שחרית ב11 בספטמבר?",
+    "context": null,
+    "answers": [
+      "במגדלי התאומים"
+    ],
+    "prediction": "הם התפללו תפילת שחרית ב-11 בספטמבר."
+  },
+  {
+    "pilot_id": 15,
+    "source": "heq",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מהי כמות המטרים המינימלית בה צריך לעלות פני הים על מנת להשפיע על עיר?",
+    "context": null,
+    "answers": [
+      "ארבעה מטרים"
+    ],
+    "prediction": "ארבעה מטרים"
+  },
+  {
+    "pilot_id": 16,
+    "source": "heq",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מתי יצאה ווינדוס 5?",
+    "context": null,
+    "answers": [
+      "בשנת 1990"
+    ],
+    "prediction": "@"
+  },
+  {
+    "pilot_id": 17,
+    "source": "heq",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מי הלחין את השיר \"האיש הכי מהיר\"?",
+    "context": null,
+    "answers": [
+      "סנדרסון"
+    ],
+    "prediction": "סנדרסון"
+  },
+  {
+    "pilot_id": 18,
+    "source": "heq",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "medium_f1",
+    "f1": 0.5714,
+    "em": 0,
+    "question": "איזו מפלגה בראשות בן פורת נבחרה לכנסת?",
+    "context": null,
+    "answers": [
+      "התנועה להתחדשות ממלכתית"
+    ],
+    "prediction": "התנועה להתחדשות ציונית חברתית"
+  },
+  {
+    "pilot_id": 19,
+    "source": "heq",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מתי התרחש ארמגדון פיננסי?",
+    "context": null,
+    "answers": [
+      "2008"
+    ],
+    "prediction": "1982"
+  },
+  {
+    "pilot_id": 20,
+    "source": "heq",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מה יכול להשפיע על איכות חיבור האינטרנט?",
+    "context": null,
+    "answers": [
+      "המפרט הטכני"
+    ],
+    "prediction": "יש להבטיח שיש לו חיבור אינטרנט טוב כדי שהשיחה תהיה חלקה."
+  },
+  {
+    "pilot_id": 21,
+    "source": "heq",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מהו שם משפחתו של פיטר?",
+    "context": null,
+    "answers": [
+      "סיסטביץ'"
+    ],
+    "prediction": "spiiderman"
+  },
+  {
+    "pilot_id": 22,
+    "source": "heq",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מתי כל המשפחה של תומר שובל חלתה בחופשה במקסיקו?",
+    "context": null,
+    "answers": [
+      "בשנת 2010"
+    ],
+    "prediction": "בשנת 2010"
+  },
+  {
+    "pilot_id": 23,
+    "source": "heq",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "medium_f1",
+    "f1": 0.2222,
+    "em": 0,
+    "question": "באיזו אפליקציה יש אפשרות לפילטר של מין הנוסע?",
+    "context": null,
+    "answers": [
+      "Gett"
+    ],
+    "prediction": "אַפְּלִיקַצְיַת מוֹנִיּוֹת כְּמוֹ Gett, MyTaxi אוֹ אוֹבֶּר וְלִיפְּט"
+  },
+  {
+    "pilot_id": 24,
+    "source": "heq",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מיהם הלקוחות של רני רהב?",
+    "context": null,
+    "answers": [
+      "ראש הממשלה אהוד אולמרט ושר הביטחון עמיר פרץ"
+    ],
+    "prediction": "הַלָּקוֹחוֹת שֶׁל רַהַב סוֹבְלִים מִיַחֲסֵי צִבּוּר מְזַעְזְעִים."
+  },
+  {
+    "pilot_id": 25,
+    "source": "heq",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "איזה חברה הייתה החד-קרן המהיר ביותר בהייטק הישראלי?",
+    "context": null,
+    "answers": [
+      "Wiz"
+    ],
+    "prediction": "Wiz"
+  },
+  {
+    "pilot_id": 26,
+    "source": "heq",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מהי מידת הרצינות של המהלך שביצעה אפל ביחס לאייטיונז?",
+    "context": null,
+    "answers": [
+      "חצי מתבדח"
+    ],
+    "prediction": "יחסית שקט וסולידי"
+  },
+  {
+    "pilot_id": 27,
+    "source": "heq",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מתי דווח לראשונה על תופעה של \"פלאשבקים\" לאחר שימוש ב-LSD?",
+    "context": null,
+    "answers": [
+      "בשנת 1971"
+    ],
+    "prediction": "התופעה של פלשבקים דווחה לראשונה לאחר שימוש ב-LSD."
+  },
+  {
+    "pilot_id": 28,
+    "source": "heq",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "medium_f1",
+    "f1": 0.6667,
+    "em": 0,
+    "question": "כמה עלה ל-Sirin Labs השירות של Zimperium?",
+    "context": null,
+    "answers": [
+      "54,000"
+    ],
+    "prediction": "54,000 ש\"ח"
+  },
+  {
+    "pilot_id": 29,
+    "source": "parashoot",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 0.8485,
+    "em": 0,
+    "question": "מהו תהליך המורפוגנזה?",
+    "context": null,
+    "answers": [
+      "תא גזע פלוריפוטנטי מתחלק ויוצר תאי גזע מולטיפוטנטי, אשר יתחלקו לסוג מסוים של תאים."
+    ],
+    "prediction": "תהליך המורפוגנזה הוא תהליך שבו תא גזע פלוריפוטנטי מתחלק ויוצר תאי גזע מולטיפוטנטי, אשר יתחלקו לסוג מסוים של תאים."
+  },
+  {
+    "pilot_id": 30,
+    "source": "parashoot",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "כמה מסגרות חינוך של התנועה הציונית נפתחו?",
+    "context": null,
+    "answers": [
+      "חמישה"
+    ],
+    "prediction": "cinco"
+  },
+  {
+    "pilot_id": 31,
+    "source": "parashoot",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "נשיא של איזה ארגון היה?",
+    "context": null,
+    "answers": [
+      "נשיא הבונים החופשיים"
+    ],
+    "prediction": "נשיא הבונים החופשיים."
+  },
+  {
+    "pilot_id": 32,
+    "source": "parashoot",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0714,
+    "em": 0,
+    "question": "במה עוסק השינוי שמתאר אליאס?",
+    "context": null,
+    "answers": [
+      "כללי הנימוס"
+    ],
+    "prediction": "השינוי שאליאס מתאר עוסק בהתפתחות של כללי נימוס, שאומצו בהדרגה על ידי מעמדות הביניים, במטרה להידמות לאנשי החצר, ואז על ידי אנשי החצר, במטרה להיבדל מהם."
+  },
+  {
+    "pilot_id": 33,
+    "source": "parashoot",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 0.875,
+    "em": 0,
+    "question": "עבור מה המשימה הראשונה שלו הייתה?",
+    "context": null,
+    "answers": [
+      "עבור 10 ציורי תקרה של חיי המשיח"
+    ],
+    "prediction": "עֲבוּר 10 צִיּוּרֵי תִּקְרָה שֶׁל חַיֵּי הַמָּשִׁיחַ בְּטִירַת ר�"
+  },
+  {
+    "pilot_id": 34,
+    "source": "parashoot",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "בתור מה הוזמן גדעון קוץ לוועדות פרלמנטריות בצרפת?",
+    "context": null,
+    "answers": [
+      "כמומחה"
+    ],
+    "prediction": "בצָרְפַת"
+  },
+  {
+    "pilot_id": 35,
+    "source": "parashoot",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מה נמצא בספרד?",
+    "context": null,
+    "answers": [
+      "מאובנים"
+    ],
+    "prediction": "הם נמצאו בספרד."
+  },
+  {
+    "pilot_id": 36,
+    "source": "parashoot",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מהי ההגיגית?",
+    "context": null,
+    "answers": [
+      "קערת אבן שבה ניתן לשמור זיכרונות בצורת נוזלית"
+    ],
+    "prediction": "הHINGEは一种石制的锅，在其中可以保存液态记忆，并在任何时间观看。"
+  },
+  {
+    "pilot_id": 37,
+    "source": "parashoot",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "medium_f1",
+    "f1": 0.6,
+    "em": 0,
+    "question": "מהם שתי המשימות שהוטלו על רובנוב?",
+    "context": null,
+    "answers": [
+      "רציחתו של הנשיא, והימלטות מאייל שנשלח להורגו"
+    ],
+    "prediction": "שתי המשימות שהוטלו על רובנוב הן רציחתו של הנשיא והימלטותו מאייל שנשלח להורגו."
+  },
+  {
+    "pilot_id": 38,
+    "source": "parashoot",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.1818,
+    "em": 0,
+    "question": "לפי הכתוב ב\"ההרים והימים\", לאן מביאים מנחות לשמים ולירקן?",
+    "context": null,
+    "answers": [
+      "טאישה ושאושה"
+    ],
+    "prediction": "המנחות מובאות לטאישה ושאושה, שהם קברים על הר סונג."
+  },
+  {
+    "pilot_id": 39,
+    "source": "parashoot",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.1053,
+    "em": 0,
+    "question": "מה חיזק את את האינטרס של האליטות בממלכת הונגריה בקבלת היהודים כ\"הונגרים בני דת משה\"?",
+    "context": null,
+    "answers": [
+      "היותם של דוברי-ההונגרית מיעוט בארץ וחשיבותם הכלכלית של היהודים במשק מפגר"
+    ],
+    "prediction": "לַת הַיְּהוּדִים כְּצָרְפָתִים בְּנֵי דַּת מֹשֶׁה. הַמִּנְשָׁר"
+  },
+  {
+    "pilot_id": 40,
+    "source": "parashoot",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "באיזה גיל הצטרף ג'יימס ביטי לבלקברן?",
+    "context": null,
+    "answers": [
+      "15"
+    ],
+    "prediction": "15"
+  },
+  {
+    "pilot_id": 41,
+    "source": "parashoot",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 0.8571,
+    "em": 0,
+    "question": "באיזה תאריך מתה מריה הראשונה מלכת פורטוגל?",
+    "context": null,
+    "answers": [
+      "ב-20 במרץ 1816"
+    ],
+    "prediction": "20 במרץ 1816"
+  },
+  {
+    "pilot_id": 42,
+    "source": "parashoot",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מה שם האזור בו הסיכוי למציאת אלקטרון מסוים הוא מרבי?",
+    "context": null,
+    "answers": [
+      "אורביטל אטומי"
+    ],
+    "prediction": "אורביטל אטומי."
+  },
+  {
+    "pilot_id": 43,
+    "source": "parashoot",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "medium_f1",
+    "f1": 0.6957,
+    "em": 0,
+    "question": "מהו טיב הקשר המיוחד בין אינדונזיה והולד?",
+    "context": null,
+    "answers": [
+      "בהיסטוריה המשותפת שלהן של אינטראקציות קולוניאליות במשך מאות שנים"
+    ],
+    "prediction": "היחסים בין אינדונזיה להולנד הם המוטמע בהיסטוריה המשותפת של אינטראקציות קולוניאליות במשך מאות שנים."
+  },
+  {
+    "pilot_id": 44,
+    "source": "parashoot",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.16,
+    "em": 0,
+    "question": "עם איזו קבוצת אנשים מצא רותבארד עניין משותף?",
+    "context": null,
+    "answers": [
+      "מכחישי שואה "
+    ],
+    "prediction": "רותבארד מצא עניין משותף עם היסטוריונים רוויזיוניסטים של הרייך השלישי, כולל מכחישי שואה אמריקנים כמו ג'יימס ג'יי מרטין מהמכון למחקר היסטורי."
+  },
+  {
+    "pilot_id": 45,
+    "source": "parashoot",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.1176,
+    "em": 0,
+    "question": "אילו רכיבים ישנם בארס בדרך כלל?",
+    "context": null,
+    "answers": [
+      "תערובת של חלבונים ופפטידים"
+    ],
+    "prediction": "רכיבים חלבוניים ופפטידים רעלנים מלחים ומרכיבים אורגניים אחרים כגון חומצות אמינו ומוליכים עצביים"
+  },
+  {
+    "pilot_id": 46,
+    "source": "parashoot",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מתי חתם על חוזה מקצוען?",
+    "context": null,
+    "answers": [
+      "באוגוסט 1945"
+    ],
+    "prediction": "באוגוסט 1945"
+  },
+  {
+    "pilot_id": 47,
+    "source": "parashoot",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 0.8571,
+    "em": 0,
+    "question": "במה זכתה אולזון בתוכנית כישרונות צעירים?",
+    "context": null,
+    "answers": [
+      "בתור \"ראוי לשבח\""
+    ],
+    "prediction": "זָכְתָה בְּתוֹר \"רָאוּי לְשֶׁבַח\"."
+  },
+  {
+    "pilot_id": 48,
+    "source": "parashoot",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "איזה פרק קניג היה שותף בכתיבתו?",
+    "context": null,
+    "answers": [
+      "\"The Infinite Vulcan\""
+    ],
+    "prediction": "ְסִים, וּבְשֶׁל אַנְטֶרְפְּרַיְז, אֲבָל הִיא הָיְתָה מְעֻבֶּדֶת"
+  },
+  {
+    "pilot_id": 49,
+    "source": "parashoot",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "עם מי יצר וואורינן את \"הקבוצה למוזיקה עכשווית\"?",
+    "context": null,
+    "answers": [
+      "הארווי סולברגר"
+    ],
+    "prediction": "עם הרווי סולברג"
+  },
+  {
+    "pilot_id": 50,
+    "source": "parashoot",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "לכמה משפחות הוענקו פיצויים?",
+    "context": null,
+    "answers": [
+      " 9,089"
+    ],
+    "prediction": "9,089"
+  },
+  {
+    "pilot_id": 51,
+    "source": "parashoot",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "היכן נולד בוריס אנדרייב?",
+    "context": null,
+    "answers": [
+      "בסראטוב. "
+    ],
+    "prediction": "בוריס אנדרייב נולד בסרטוב."
+  },
+  {
+    "pilot_id": 52,
+    "source": "parashoot",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "איפה נקלטה חברת הנוער הראשונה?",
+    "context": null,
+    "answers": [
+      "בקיבוץ עין חרוד"
+    ],
+    "prediction": "בקיבוץ עין חרוד"
+  },
+  {
+    "pilot_id": 53,
+    "source": "parashoot",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "medium_f1",
+    "f1": 0.4762,
+    "em": 0,
+    "question": "ג'ונתן בלו עיצב את המשחק כמעין ביקורת אישית כלפי מה?",
+    "context": null,
+    "answers": [
+      "כלפי טרנדים הקיימים בקרב מפתחי משחקים. "
+    ],
+    "prediction": "ג'ונתן בלו עשה את המשחק כמו בקרת אישית כלפי טרנדים מסוימים בקרב מפתחי משחקים."
+  },
+  {
+    "pilot_id": 54,
+    "source": "parashoot",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "medium_f1",
+    "f1": 0.3077,
+    "em": 0,
+    "question": "איך תיאר בני גנץ את תהליך ההצבעה?",
+    "context": null,
+    "answers": [
+      "ליך שדגל שחור של פגיעה בסדרי שלטון מתנוסס מעליו"
+    ],
+    "prediction": "ביני ג'אנץ תparalleled את תהליך ההצבעה כ\"הילך של דגל שחור שנפגע בסדרי שלטון מטוסס מעליה.\""
+  },
+  {
+    "pilot_id": 55,
+    "source": "parashoot",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "איך קראו לטלנובלה שבה השתתפה?",
+    "context": null,
+    "answers": [
+      " \"Rebelde\""
+    ],
+    "prediction": "Rebelde"
+  },
+  {
+    "pilot_id": 56,
+    "source": "parashoot",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מה שמו של הביוגרף של ברנדג'?",
+    "context": null,
+    "answers": [
+      "אלן גוטמן"
+    ],
+    "prediction": "אֵלֶן גּוּטְמָן"
+  },
+  {
+    "pilot_id": 57,
+    "source": "mkqa",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מי שר את t's a long way to the top if you want to rock and roll",
+    "context": null,
+    "answers": [
+      "AC/DC",
+      "AC/DC",
+      "Acdc",
+      "איי.סי/די.סי",
+      "A.c.d.c",
+      "Ac dc",
+      "A c d c",
+      "איי.סי.די.סי",
+      "איי סי/די סי",
+      "איי סי די סי"
+    ],
+    "prediction": "David Bowie"
+  },
+  {
+    "pilot_id": 58,
+    "source": "mkqa",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "medium_f1",
+    "f1": 0.3077,
+    "em": 0,
+    "question": "i left my heart in san francisco מי שר את",
+    "context": null,
+    "answers": [
+      "טוני בנט"
+    ],
+    "prediction": "טוני בנט שר את \"I Left My Heart in San Francisco\"."
+  },
+  {
+    "pilot_id": 59,
+    "source": "mkqa",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מי גילם את התפקיד הראשי בחוש השישי",
+    "context": null,
+    "answers": [
+      "היילי ג'ואל אוסמנט",
+      "היילי אוסמנט",
+      "היילי ג'ואל אוזמנט",
+      "היילי אוזמנט",
+      "ברוס ויליס"
+    ],
+    "prediction": "Türkiye'li oyuncu Mustafa Şatilcigil Gilmelidik. Ancak dikkat edilmesi gereken bir nokta burada var. \"חש השישי\" (Sixth Sense) adlı filmin orijinal versiyonunda briliant oyuncu Jodie Foster'in oynadığı rol, orijinal hikayen"
+  },
+  {
+    "pilot_id": 60,
+    "source": "mkqa",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מי שיחק את הילדה עם התסמונת דאון באיש משפחה",
+    "context": null,
+    "answers": [
+      "אנדראה פאי פרידמן"
+    ],
+    "prediction": "האדם ששיחק עם הילדה עם תסמונת דאון היה בן משפחה."
+  },
+  {
+    "pilot_id": 61,
+    "source": "mkqa",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "באיזה חלק בניו יורק נמצא ה time square",
+    "context": null,
+    "answers": [
+      "מידטאון מנהטן"
+    ],
+    "prediction": "בחלק המרכז של ניו יורק, בסיטי הילס."
+  },
+  {
+    "pilot_id": 62,
+    "source": "mkqa",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 0.8,
+    "em": 0,
+    "question": "היכן צולם הסרט the lake house",
+    "context": null,
+    "answers": [
+      "שיקגו",
+      "ארצות הברית",
+      "אמריקה",
+      "ארה\"ב",
+      "ארצות-הברית",
+      "USA",
+      "ארצות הברית של אמריקה",
+      "המטרופולין של שיקגו",
+      "מטרופולין שיקגו",
+      "אמריקה הצפונית"
+    ],
+    "prediction": "ארצות הברית-Israel"
+  },
+  {
+    "pilot_id": 63,
+    "source": "mkqa",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "i'm on the edge of glory מי שר את",
+    "context": null,
+    "answers": [
+      "ליידי גאגא",
+      "סטפני גרמנוטה",
+      "ליידי גגה",
+      "גאגא",
+      "ליידי גגא",
+      "סטפני ג'ואן אנג'לינה גרמנוטה",
+      "ליידי גהגה",
+      "Lady Gaga"
+    ],
+    "prediction": "Lady Gaga"
+  },
+  {
+    "pilot_id": 64,
+    "source": "mkqa",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מי היה הנשיא בזמן מתקפת פרל הארבור",
+    "context": null,
+    "answers": [
+      "פרנקלין דלאנו רוזוולט",
+      "רוזוועלט, פראנקלין ד."
+    ],
+    "prediction": "פרנקלין דלאנו רוזוולט"
+  },
+  {
+    "pilot_id": 65,
+    "source": "mkqa",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מה שמו של ההר הגבוה ביותר בבריטניה",
+    "context": null,
+    "answers": [
+      "סקייפל פייק",
+      "בן נוויס"
+    ],
+    "prediction": "בן נוויס"
+  },
+  {
+    "pilot_id": 66,
+    "source": "mkqa",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "medium_f1",
+    "f1": 0.5,
+    "em": 0,
+    "question": "מי שרוב הסופרבול מנצח AFC או NFC",
+    "context": null,
+    "answers": [
+      "National Football Conference",
+      "ליגת הפוטבול הלאומית",
+      "NFC",
+      "ה- nfc / nfl"
+    ],
+    "prediction": "הסופרבול מנצח את ה-NFC."
+  },
+  {
+    "pilot_id": 67,
+    "source": "mkqa",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מי דחה את תפקידה של אישה יפה",
+    "context": null,
+    "answers": [
+      "מולי רינגוולד",
+      "קארן אלן",
+      "אמילי לויד"
+    ],
+    "prediction": "ג'ון סטיוארט מיל"
+  },
+  {
+    "pilot_id": 68,
+    "source": "mkqa",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "שם המחזאי של רומאו ויוליה",
+    "context": null,
+    "answers": [
+      "ויליאם שייקספיר",
+      "שייקספיר, וו.,",
+      "שעקספער"
+    ],
+    "prediction": "ויליאם שייקספיר"
+  },
+  {
+    "pilot_id": 69,
+    "source": "mkqa",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מי היה נשיא בזמן מלחמת העולם השנייה",
+    "context": null,
+    "answers": [
+      "פרנקלין דלאנו רוזוולט",
+      "רוזוועלט, פראנקלין ד."
+    ],
+    "prediction": "פרנץ פון פרוסדוקו"
+  },
+  {
+    "pilot_id": 70,
+    "source": "mkqa",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מי המנהל של טקסס ריינג'רס",
+    "context": null,
+    "answers": [
+      "כריס וודוורד"
+    ],
+    "prediction": "ג'רי ג'ונס"
+  },
+  {
+    "pilot_id": 71,
+    "source": "mkqa",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "איזה יום הוא היום הראשון בשבוע",
+    "context": null,
+    "answers": [
+      "יום ראשון",
+      "יום שני"
+    ],
+    "prediction": "יום ראשון"
+  },
+  {
+    "pilot_id": 72,
+    "source": "mkqa",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "fried green tomatoes-של מי הגברת הזקנה מ",
+    "context": null,
+    "answers": [
+      "ninny threadgoode"
+    ],
+    "prediction": "של נאני"
+  },
+  {
+    "pilot_id": 73,
+    "source": "mkqa",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "on the wings of a snow white dove מי שר את",
+    "context": null,
+    "answers": [
+      "פרלין האסקי"
+    ],
+    "prediction": "השיר נכתב על ידי סטיבן סונדהיים."
+  },
+  {
+    "pilot_id": 74,
+    "source": "mkqa",
+    "model_key": "dictalm2",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מי הוא השופט הראשי של ארצות הברית עכשיו ב2017",
+    "context": null,
+    "answers": [
+      "ג'ון רוברטס"
+    ],
+    "prediction": "ג'ון רוברטס"
+  },
+  {
+    "pilot_id": 75,
+    "source": "mkqa",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מי שר את killing me softly with his words",
+    "context": null,
+    "answers": [
+      "רוברטה פלאק",
+      "רוברטה פלאק"
+    ],
+    "prediction": "רוברטה פלאק"
+  },
+  {
+    "pilot_id": 76,
+    "source": "mkqa",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מי כתב את השיר i don't want to miss a thing",
+    "context": null,
+    "answers": [
+      "אירוסמית'",
+      "ארוסמית",
+      "Aerosmith",
+      "אירוסמית",
+      "ארוסמית'"
+    ],
+    "prediction": "Aerosmith"
+  },
+  {
+    "pilot_id": 77,
+    "source": "mkqa",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מדינה שרוסיה הייתה בעבר חלק ממנה",
+    "context": null,
+    "answers": [
+      "ברית המועצות"
+    ],
+    "prediction": "ברית המועצות"
+  },
+  {
+    "pilot_id": 78,
+    "source": "mkqa",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מי שר את השיר bad to the bone",
+    "context": null,
+    "answers": [
+      "ג'ורג' ת'ורוגוד"
+    ],
+    "prediction": "ג'ורג' ת'ורוגוד"
+  },
+  {
+    "pilot_id": 79,
+    "source": "mkqa",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מי גילם את חלקו של הדוד נורי בגרסת הקולנוע של אופרת הרוק \"טומי\"",
+    "context": null,
+    "answers": [
+      "קית' מון",
+      "קית מון"
+    ],
+    "prediction": "בגרסת הקולנוע של אופרת הרוק \"טומי\", הדוד נורי הופך לרגל תיאטרון וגילם אותו השחקן ג'ון סמית'."
+  },
+  {
+    "pilot_id": 80,
+    "source": "mkqa",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "מה היה שם הקוד מבצע ה- iaf בשנת 1999",
+    "context": null,
+    "answers": [
+      "מבצע צפת סגר",
+      "מבצע ים לבן"
+    ],
+    "prediction": "IFA World Cup"
+  },
+  {
+    "pilot_id": 81,
+    "source": "mkqa",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "high_f1",
+    "f1": 1.0,
+    "em": 1,
+    "question": "מי היה הזמר המקורי של knocking on heavens door",
+    "context": null,
+    "answers": [
+      "בוב דילן",
+      "Bob Dylan"
+    ],
+    "prediction": "בוב דילן"
+  },
+  {
+    "pilot_id": 82,
+    "source": "mkqa",
+    "model_key": "qwen2.5-7b",
+    "condition": "no_niqud",
+    "f1_level": "medium_f1",
+    "f1": 0.5,
+    "em": 0,
+    "question": "מה הוא רכס ההרים הגבה ביותר בארצות הברית",
+    "context": null,
+    "answers": [
+      "הר דנאלי",
+      "רכס אלסקה"
+    ],
+    "prediction": "רכס האפיפיורIDES"
+  },
+  {
+    "pilot_id": 83,
+    "source": "mkqa",
+    "model_key": "qwen2.5-7b",
+    "condition": "with_niqud",
+    "f1_level": "medium_f1",
+    "f1": 0.4,
+    "em": 0,
+    "question": "איזה פסל יש בראש הבית הלבן",
+    "context": null,
+    "answers": [
+      "פסל החופש"
+    ],
+    "prediction": "פסל דוב לבן"
+  },
+  {
+    "pilot_id": 84,
+    "source": "mkqa",
+    "model_key": "dictalm2",
+    "condition": "no_niqud",
+    "f1_level": "low_f1",
+    "f1": 0.0,
+    "em": 0,
+    "question": "back in the high life again מי שר את",
+    "context": null,
+    "answers": [
+      "סטיב וינווד"
+    ],
+    "prediction": "השיר נכתב ובוצע על ידי טוני בנט."
+  }
+]

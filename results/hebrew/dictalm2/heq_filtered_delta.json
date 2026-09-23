@@ -1,0 +1,14 @@
+{
+  "model": "dicta-il/dictalm2.0-instruct",
+  "heq_filtered": {
+    "n": 2152,
+    "base_em": 8.46,
+    "niq_em": 12.69,
+    "delta_em": 4.23,
+    "base_f1": 23.44,
+    "niq_f1": 27.85,
+    "delta_f1": 4.41,
+    "niq_helped_em": 7.85,
+    "niq_hurt_em": 3.62
+  }
+}

@@ -1,0 +1,124 @@
+Dataset Sources
+===============
+
+HeQ (Hebrew Question Answering Benchmark)
+------------------------------------------
+Authors:   Keydar et al.
+Venue:     Findings of EMNLP 2023
+Size:      30,147 QA pairs (train 27,142 / val 1,501 / test 1,504)
+Format:    Extractive reading comprehension (SQuAD-style span extraction)
+Sources:   Hebrew Wikipedia and Geektime (Israeli tech news)
+Niqud status: NONE. Both source corpora are modern Israeli prose written in
+            standard unvocalized Hebrew script, as is the overwhelming norm in
+            contemporary written Hebrew. The data is niqud-free as distributed.
+Annotation: Crowdsourced under a controlled protocol designed to address
+            morphological ambiguity in Hebrew; includes revised EM/F1 metrics
+            that account for non-transparent span boundaries in morphologically
+            rich forms.
+HuggingFace: pig4431/HeQ_v1
+Paper:     https://arxiv.org/abs/2508.01812
+
+ParaShoot
+----------
+Authors:   Keren & Levy (Tel Aviv University)
+Venue:     Proceedings of the 3rd Workshop on Machine Reading for Question
+           Answering (MRQA @ EMNLP 2021)
+Size:      ~3,000 crowdsource-annotated QA pairs (train / dev / test splits)
+Format:    Extractive reading comprehension (SQuAD-style)
+Sources:   Hebrew Wikipedia
+Niqud status: NONE. Hebrew Wikipedia articles are authored in unvocalized
+            modern Hebrew; no diacritics appear in the passages or questions
+            as distributed by the original authors.
+Annotation: Human-annotated following SQuAD crowdsourcing methodology;
+            the first native Hebrew QA dataset, designed to support few-shot
+            and cross-lingual transfer research.
+Repository: https://github.com/omrikeren/ParaShoot
+Paper:     https://arxiv.org/abs/2109.11314
+
+MKQA — Multilingual Knowledge Questions & Answers (Hebrew subset)
+------------------------------------------------------------------
+Authors:   Longpre et al. (Apple Research)
+Venue:     Transactions of the Association for Computational Linguistics (TACL), 2021
+Size:      10,000 QA pairs aligned across 26 languages; Hebrew subset retains
+           ~7,000 examples after filtering unanswerable and null-answer instances.
+Format:    Open-domain QA (no supporting context); answers are short entities,
+           values, or phrases.
+Sources:   Questions sampled from Natural Questions (Kwiatkowski et al., 2019)
+           and human-translated into Hebrew by professional annotators; answers
+           are represented in a language-independent canonical form.
+Niqud status: NONE. Questions were translated by professional annotators
+            into standard unvocalized modern Hebrew. Answers are predominantly
+            named entities, numerals, and short fixed phrases — categories that
+            are inherently niqud-invariant.
+Role in this study: Serves as a negative control. Because answers are largely
+           proper nouns, numerals, and fixed entities, diacritization is expected
+           to have minimal impact, providing a contrastive baseline against the
+           reading-comprehension tasks above.
+Repository: https://github.com/apple/ml-mkqa
+Paper:     https://arxiv.org/abs/2007.15207
+
+Usage in This Study (Hebrew)
+----------------------------
+All three datasets are originally distributed without niqud, reflecting the
+natural state of modern written Hebrew. This means the no-niqud condition
+(baseline) is the data as-is, and no stripping is required beyond a
+precautionary Unicode pass to catch any stray diacritic characters. The
+with-niqud condition is produced by running the baseline text through an
+automatic diacritization tool (dicta-il/dictabert-large-char-menaked, i.e.
+Nakdan/DICTA) on the context and question fields only; answer strings are
+held fixed across both conditions. The primary metric is the delta in
+token-level F1 and Exact Match (EM). HeQ and ParaShoot are the primary
+benchmarks; MKQA serves as a negative control where the niqud effect is
+hypothesized to be near zero.
+
+
+ARCD (Arabic Reading Comprehension Dataset)
+--------------------------------------------
+Authors:   Mozannar, Maamary, El Hajal, Hajj
+Venue:     Proceedings of the Fourth Arabic Natural Language Processing
+           Workshop (WANLP @ ACL 2019), Florence, Italy
+Size:      1,395 QA pairs (evaluation set used in this study)
+Format:    Extractive reading comprehension (SQuAD-style span extraction)
+Sources:   Arabic Wikipedia articles
+Tashkeel status: NONE. Arabic Wikipedia prose is written in standard
+            undiacritized Modern Standard Arabic, as is the overwhelming
+            norm in contemporary written Arabic.
+Paper:     "Neural Arabic Question Answering"
+
+TyDiQA (Arabic subset)
+------------------------
+Authors:   Clark, Choi, Collins, Garrette, Kwiatkowski, Nikolaev, Palomaki
+Venue:     Transactions of the Association for Computational Linguistics
+           (TACL), 2020
+Size:      15,726 QA pairs (evaluation set used in this study)
+Format:    Extractive/information-seeking QA over Wikipedia passages,
+           typologically diverse multilingual benchmark
+Sources:   Arabic Wikipedia
+Tashkeel status: NONE, undiacritized as distributed.
+Paper:     "TyDi QA: A Benchmark for Information-Seeking Question Answering
+           in Typologically Diverse Languages"
+
+MKQA — Multilingual Knowledge Questions & Answers (Arabic subset)
+--------------------------------------------------------------------
+Authors:   Longpre, Lu, Daiber (Apple Research)
+Venue:     Transactions of the Association for Computational Linguistics
+           (TACL), 2021
+Size:      4,966 QA pairs (evaluation set used in this study)
+Format:    Open-domain QA (no supporting context); short entity/value answers
+Sources:   Questions sampled from Natural Questions, human-translated into
+           Arabic by professional annotators; answers in a
+           language-independent canonical form.
+Tashkeel status: NONE, undiacritized as distributed.
+Repository: https://github.com/apple/ml-mkqa
+
+Usage in This Study (Arabic)
+------------------------------
+All three Arabic datasets are originally distributed without Tashkeel. The
+plain condition is the data as-is; the Tashkeel condition is produced by
+running the plain text through Farasa (Abdelali, Darwish, Durrani, Mubarak,
+"Farasa: A Fast and Furious Segmenter for Arabic", NAACL 2016 Demonstrations)
+on the context and question fields only, with answer strings held fixed
+across both conditions. A causal ablation ("postfix") re-encodes the
+identical Tashkeel diacritics at a different Unicode/tokenizer-boundary
+position (see data/arabic/postfix_tashkeel/ and results/arabic/postfix_silma/)
+to isolate tokenization placement from diacritic presence.

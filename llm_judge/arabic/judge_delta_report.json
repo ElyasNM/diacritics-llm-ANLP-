@@ -1,0 +1,278 @@
+{
+  "per_model_dataset": {
+    "qwen_arcd": {
+      "n": 500,
+      "plain_acc": 91.0,
+      "tash_acc": 85.0,
+      "delta": -6.0,
+      "transitions": {
+        "n_paired": 500,
+        "CC": 411,
+        "CI": 44,
+        "IC": 14,
+        "II": 31,
+        "pct_harmed": 8.8,
+        "pct_helped": 2.8,
+        "net_churn": 30
+      }
+    },
+    "qwen_tydiqa": {
+      "n": 600,
+      "plain_acc": 87.83,
+      "tash_acc": 80.67,
+      "delta": -7.16,
+      "transitions": {
+        "n_paired": 600,
+        "CC": 461,
+        "CI": 66,
+        "IC": 23,
+        "II": 50,
+        "pct_harmed": 11.0,
+        "pct_helped": 3.83,
+        "net_churn": 43
+      }
+    },
+    "qwen_mkqa": {
+      "n": 400,
+      "plain_acc": 9.75,
+      "tash_acc": 4.5,
+      "delta": -5.25,
+      "transitions": {
+        "n_paired": 400,
+        "CC": 11,
+        "CI": 28,
+        "IC": 7,
+        "II": 354,
+        "pct_harmed": 7.0,
+        "pct_helped": 1.75,
+        "net_churn": 21
+      }
+    },
+    "silma_arcd": {
+      "n": 500,
+      "plain_acc": 88.6,
+      "tash_acc": 81.4,
+      "delta": -7.2,
+      "transitions": {
+        "n_paired": 500,
+        "CC": 394,
+        "CI": 49,
+        "IC": 13,
+        "II": 44,
+        "pct_harmed": 9.8,
+        "pct_helped": 2.6,
+        "net_churn": 36
+      }
+    },
+    "silma_tydiqa": {
+      "n": 600,
+      "plain_acc": 82.17,
+      "tash_acc": 74.5,
+      "delta": -7.67,
+      "transitions": {
+        "n_paired": 600,
+        "CC": 414,
+        "CI": 79,
+        "IC": 33,
+        "II": 74,
+        "pct_harmed": 13.17,
+        "pct_helped": 5.5,
+        "net_churn": 46
+      }
+    },
+    "silma_mkqa": {
+      "n": 400,
+      "plain_acc": 14.0,
+      "tash_acc": 6.5,
+      "delta": -7.5,
+      "transitions": {
+        "n_paired": 400,
+        "CC": 21,
+        "CI": 35,
+        "IC": 5,
+        "II": 339,
+        "pct_harmed": 8.75,
+        "pct_helped": 1.25,
+        "net_churn": 30
+      }
+    },
+    "dictalm2_arcd": {
+      "n": 500,
+      "plain_acc": 78.6,
+      "tash_acc": 69.2,
+      "delta": -9.4,
+      "transitions": {
+        "n_paired": 500,
+        "CC": 311,
+        "CI": 82,
+        "IC": 35,
+        "II": 72,
+        "pct_harmed": 16.4,
+        "pct_helped": 7.0,
+        "net_churn": 47
+      }
+    },
+    "dictalm2_tydiqa": {
+      "n": 600,
+      "plain_acc": 81.5,
+      "tash_acc": 69.33,
+      "delta": -12.17,
+      "transitions": {
+        "n_paired": 600,
+        "CC": 391,
+        "CI": 98,
+        "IC": 25,
+        "II": 86,
+        "pct_harmed": 16.33,
+        "pct_helped": 4.17,
+        "net_churn": 73
+      }
+    },
+    "dictalm2_mkqa": {
+      "n": 400,
+      "plain_acc": 6.5,
+      "tash_acc": 6.0,
+      "delta": -0.5,
+      "transitions": {
+        "n_paired": 400,
+        "CC": 11,
+        "CI": 15,
+        "IC": 13,
+        "II": 361,
+        "pct_harmed": 3.75,
+        "pct_helped": 3.25,
+        "net_churn": 2
+      }
+    }
+  },
+  "per_model_overall": {
+    "qwen": {
+      "n": 1500,
+      "plain_acc": 68.07,
+      "tash_acc": 61.8,
+      "delta": -6.27,
+      "transitions": {
+        "n_paired": 1500,
+        "CC": 883,
+        "CI": 138,
+        "IC": 44,
+        "II": 435,
+        "pct_harmed": 9.2,
+        "pct_helped": 2.93,
+        "net_churn": 94
+      }
+    },
+    "silma": {
+      "n": 1500,
+      "plain_acc": 66.13,
+      "tash_acc": 58.67,
+      "delta": -7.46,
+      "transitions": {
+        "n_paired": 1500,
+        "CC": 829,
+        "CI": 163,
+        "IC": 51,
+        "II": 457,
+        "pct_harmed": 10.87,
+        "pct_helped": 3.4,
+        "net_churn": 112
+      }
+    },
+    "dictalm2": {
+      "n": 1500,
+      "plain_acc": 60.53,
+      "tash_acc": 52.4,
+      "delta": -8.13,
+      "transitions": {
+        "n_paired": 1500,
+        "CC": 713,
+        "CI": 195,
+        "IC": 73,
+        "II": 519,
+        "pct_harmed": 13.0,
+        "pct_helped": 4.87,
+        "net_churn": 122
+      }
+    }
+  },
+  "combined_overall": {
+    "n": 4500,
+    "plain_acc": 64.91,
+    "tash_acc": 57.62,
+    "delta": -7.29
+  },
+  "per_bucket": {
+    "qwen_short": {
+      "n": 326,
+      "plain_acc": 64.72,
+      "tash_acc": 57.36,
+      "delta": -7.36
+    },
+    "qwen_medium": {
+      "n": 822,
+      "plain_acc": 60.46,
+      "tash_acc": 56.81,
+      "delta": -3.65
+    },
+    "qwen_long": {
+      "n": 303,
+      "plain_acc": 88.78,
+      "tash_acc": 79.21,
+      "delta": -9.57
+    },
+    "qwen_very_long": {
+      "n": 49,
+      "plain_acc": 89.8,
+      "tash_acc": 67.35,
+      "delta": -22.45
+    },
+    "silma_short": {
+      "n": 326,
+      "plain_acc": 69.02,
+      "tash_acc": 61.96,
+      "delta": -7.06
+    },
+    "silma_medium": {
+      "n": 822,
+      "plain_acc": 62.17,
+      "tash_acc": 54.14,
+      "delta": -8.03
+    },
+    "silma_long": {
+      "n": 303,
+      "plain_acc": 73.6,
+      "tash_acc": 68.65,
+      "delta": -4.95
+    },
+    "silma_very_long": {
+      "n": 49,
+      "plain_acc": 67.35,
+      "tash_acc": 51.02,
+      "delta": -16.33
+    },
+    "dictalm2_short": {
+      "n": 326,
+      "plain_acc": 59.51,
+      "tash_acc": 52.76,
+      "delta": -6.75
+    },
+    "dictalm2_medium": {
+      "n": 822,
+      "plain_acc": 56.45,
+      "tash_acc": 49.76,
+      "delta": -6.69
+    },
+    "dictalm2_long": {
+      "n": 303,
+      "plain_acc": 71.29,
+      "tash_acc": 59.74,
+      "delta": -11.55
+    },
+    "dictalm2_very_long": {
+      "n": 49,
+      "plain_acc": 69.39,
+      "tash_acc": 48.98,
+      "delta": -20.41
+    }
+  }
+}
