@@ -3,8 +3,8 @@
 Code, data, and results for a study measuring whether adding vowel
 diacritics (Niqud in Hebrew, Tashkeel in Arabic) to QA inputs helps or
 hurts LLM performance, across three models per language and six QA
-benchmarks, with an LLM-as-judge re-scoring pass and a causal Unicode
-placement ablation.
+benchmarks, with an LLM-as-judge re-scoring pass and a postfix
+diacritic-placement ablation.
 
 Core metric: **ΔF1 / ΔEM = score(diacritized) − score(plain)**, per
 dataset/model, computed by `evaluate.py` + `compute_delta.py` in each
@@ -38,7 +38,7 @@ with Farasa.
 ```
 .
 ├── code/
-│   ├── hebrew/           # download -> preprocess -> apply_niqud -> evaluate -> compute_delta (+ recalc_heq_filtered)
+│   ├── hebrew/           # download -> preprocess -> apply_niqud -> evaluate -> compute_delta (+ recalc_heq_filtered, compute_fragmentation_hebrew)
 │   └── arabic/           # preprocess -> evaluate -> compute_delta / compute_fragmentation / prepare_postfix_tashkeel
 ├── data/
 │   ├── hebrew/
@@ -48,7 +48,7 @@ with Farasa.
 │   └── arabic/
 │       ├── no_tashkeel/   # plain baseline JSONL (ARCD, TyDiQA, MKQA-AR)
 │       ├── with_tashkeel/ # Tashkeel (Farasa, standard Unicode prefix placement)
-│       └── postfix_tashkeel/  # causal ablation: same diacritics, postfix Unicode placement (ARCD, TyDiQA only)
+│       └── postfix_tashkeel/  # postfix ablation: same diacritics, moved to the end of each word (ARCD, TyDiQA only)
 ├── results/
 │   ├── hebrew/{dictalm2,qwen2.5-7b}/       # no_niqud.json, with_niqud.json, delta.json, heq_filtered_* (quality-filtered HeQ subset)
 │   └── arabic/
@@ -59,7 +59,7 @@ with Farasa.
 │   ├── hebrew/           # judge input/output, question set, delta report, judge scripts, human-agreement pilot
 │   └── arabic/           # same, for the Arabic judge run
 ├── failure_case_corpus/
-│   ├── niqud_hurt_examples_ALL.txt   # 898 judge-confirmed diacritic-induced correct->incorrect cases (427 Hebrew, 471 Arabic)
+│   ├── niqud_hurt_examples_ALL.txt   # ~900 judge-confirmed diacritic-induced correct->incorrect cases (Hebrew and Arabic)
 │   └── mkqa_harm_dump.json           # MKQA-specific harm cases (structured)
 ├── report/
 │   └── examples_for_report.txt       # hand-annotated qualitative failure/success examples
@@ -96,7 +96,7 @@ python recalc_heq_filtered.py
 
 ```bash
 python preprocess.py                          # build plain/Tashkeel JSONL -> data/arabic/{no_tashkeel,with_tashkeel}/
-python prepare_postfix_tashkeel.py             # causal ablation -> data/arabic/postfix_tashkeel/
+python prepare_postfix_tashkeel.py             # postfix ablation -> data/arabic/postfix_tashkeel/
 
 python evaluate.py --model <hf-model> --data data/arabic/no_tashkeel   --output results/arabic/<model>/no_tashkeel.json
 python evaluate.py --model <hf-model> --data data/arabic/with_tashkeel --output results/arabic/<model>/with_tashkeel.json
@@ -111,7 +111,10 @@ Each language directory has the same 6-step pipeline (see each `scripts/README.m
 for details): sample a stratified evaluation set → build the judge input →
 run the judge (`gpt-4o-mini-2024-07-18`, binary CORRECT/INCORRECT, blinded
 to model identity and condition) → compute the judge-based delta →
-(Hebrew) check agreement against a human-labeled pilot sample.
+check agreement against human labels (Arabic binary pilot: 94.4% agreement,
+κ=0.874; Arabic post-run Qwen sanity check: 90.8%, κ=0.813; Hebrew pilot:
+94.0%, κ=0.879). The judge always sees the plain (unvocalized) question,
+regardless of condition.
 
 ## Setup
 

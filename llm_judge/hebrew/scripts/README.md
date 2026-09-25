@@ -47,7 +47,7 @@ python 3_agreement_hebrew.py \
 ```
 
 Proceed if Cohen's kappa >= 0.60 and consistency >= 80%.
-(Arabic pilot achieved kappa = 0.702, consistency = 100%.)
+(Arabic pilot achieved kappa = 0.874, 94.4% agreement, 15/15 consistency.)
 
 ---
 
